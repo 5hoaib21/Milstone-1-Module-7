@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      width: 1000px;
+      height: 700px;
+      border: 1px solid tomato;
+      /* width: 100%;
+    height: 100%; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(300px 700px);
+    }
+    .div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 200px;
+      height: 200px;
+      border: 1px solid pink;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="div">Box - 1</div>
+      <div class="div">Box - 2</div>
+    </div>
+  </body>
+</html>
