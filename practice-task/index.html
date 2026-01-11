@@ -6,32 +6,38 @@
     <title>Document</title>
   </head>
   <style>
-    .container {
-      width: 1000px;
-      height: 700px;
-      border: 1px solid tomato;
-      /* width: 100%;
-    height: 100%; */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      display: grid;
-      grid-template-columns: repeat(300px 700px);
-    }
-    .div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
-      width: 200px;
-      height: 200px;
-      border: 1px solid pink;
+    body{
+      /* background-color: blue; */
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px;
+      
     }
+    .div{
+      background-color: blueviolet;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 200px 200px 200px 200px;
+      grid-template-rows: 200px 200px;
+      gap: 1em;
+      grid-template-areas: 
+      "box-1 box-2 box-2 box-3"
+      "box-1 box-4 box-5 box-5";
+
+    }
+
   </style>
   <body>
     <div class="container">
-      <div class="div">Box - 1</div>
-      <div class="div">Box - 2</div>
+      <div class="div" style="grid-area: box-1;"></div>
+      <div class="div" style="grid-area: box-2;"></div>
+      <div class="div" style="grid-area: box-3;"></div>
+      <div class="div" style="grid-area: box-4;"></div>
+      <div class="div" style="grid-area: box-5;"></div>
     </div>
   </body>
 </html>
